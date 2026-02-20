@@ -1,28 +1,24 @@
-// Даны два числа. Вывести порядковый номер меньшего из них.
+// Даны три числа. Вывести порядковый номер меньшего из них.
 #include <iostream>
 using namespace std;
 
 int main () { setlocale (LC_CTYPE , "Russian");
-    int a, b;
-    cout <<  "Введите а, b " "\n" ;
-    cin  >> a >> b ;
-    if (a < b)
-    {
+    int a, b, c;
+    cout <<  "Введите а, b , c " "\n" ;
+    cin  >> a >> b >> c ;
+    if (a < b && a < c)
+         {
 	    cout << 1 << endl;
-	}
+         }
 	
-	else if (a > b)
-	{
+    else if (b < a && b < c)
+	 {
 	    cout << 2 << endl;
-	}
-    else 
-    {
-	  cout << "Числа равны " << endl << 1  << " " << 2 << endl;
-	}
-	
+   	 }
+
+    else {
+            cout << 3 << endl;
+         }
+    
   return 0;
-
-
-
-
 }
