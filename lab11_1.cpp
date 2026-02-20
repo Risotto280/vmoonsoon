@@ -5,12 +5,11 @@ using namespace std;
 
 int main() { setlocale(LC_CTYPE , "Russian");
 int x;
-double i,price;
-cout << "";
+double i;
+cout << "Введите цену 1 кг конфет";
 cin >> x;
-
 for (i = 1.0; i <= 2.0; i+= 0.2) { // i <= 2 , i + 0.2
-    cout << "Стоимость " << x * i << "," << " кг конфет: " << i << endl;
+    cout << "Стоимость " << i << "," << " кг конфет: " << x * i << endl;
 }
 }
 
